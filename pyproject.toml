@@ -1,22 +1,20 @@
-[project]
+[tool.poetry]
 name = "portfolio-optimizer"
 version = "0.1.0"
 description = "Stock forecasting project"
-authors = [
-    {name = "Mrciin",email = "chrostowskimarcin4@gmail.com"}
-]
+authors = ["Mrciin <chrostowskimarcin4@gmail.com>"]
 readme = "README.md"
-requires-python = "^3.12"
-dependencies = [
-    "matplotlib (>=3.10.8,<4.0.0)",
-    "yfinance (>=1.1.0,<2.0.0)",
-    "prophet (>=1.3.0,<2.0.0)",
-    "scipy (>=1.17.0,<2.0.0)",
-    "streamlit (>=1.54.0,<2.0.0)",
-    "pandas (>=2.0.0,<3.0.0)"
-]
+package-mode = false
 
+[tool.poetry.dependencies]
+python = "^3.12"
+matplotlib = "^3.10.0"
+yfinance = "^0.2.0"  # yfinance ma inną numerację, to jest poprawna wersja
+prophet = "^1.1.0"
+scipy = "^1.11.0"
+streamlit = "^1.30.0"
+pandas = "^2.0.0"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
